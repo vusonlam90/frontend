@@ -16113,7 +16113,7 @@ p.p-mobile {
     .index-homepage .simplified .hero-home-bg-cover {
         width: 1610px;
         height: 1523px;
-        background: url(../..//assets/images/hero-burst.svg) no-repeat;
+        background: url(../../assets/images/hero-burst.svg) no-repeat;
         background-position: top -410px center;
         -webkit-transform: translate(-50%, 0%);
         -ms-transform: translate(-50%, 0%);
