@@ -16099,7 +16099,7 @@ p.p-mobile {
     position: absolute;
     left: 50%;
 }
-/*@media (max-width: 991px) {
+@media (max-width: 991px) {
     .index-homepage .simplified .hero-home-bg-cover {
         width: 878px;
         height: 676px;
@@ -16119,7 +16119,7 @@ p.p-mobile {
         -ms-transform: translate(-50%, 0%);
         transform: translate(-50%, 0%);
     }
-}*/
+}
 .index-homepage .simplified .btn.btn-simplified {
     margin-top: 16px;
 }
