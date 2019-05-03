@@ -10,6 +10,10 @@
 # “publish” is the directory to publish (relative to root of your repo),
 #
 
+[build]
+  base    = ""
+  publish = ""
+  command = 'npm run build'
 
 [[redirects]]
   from = "/*"
