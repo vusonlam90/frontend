@@ -21,3 +21,28 @@
         }
     }
 </script>
+
+<style scoped>
+
+@media (max-width: 991px) {
+    .index-homepage .simplified .hero-home-bg-cover {
+        width: 878px;
+        height: 676px;
+    background: url('../assets/images/hero-burst-mobile.svg') no-repeat;
+        -webkit-transform: translate(-50%, 10%);
+        -ms-transform: translate(-50%, 10%);
+        transform: translate(-50%, 10%);
+    }
+}
+@media (min-width: 992px) {
+    .index-homepage .simplified .hero-home-bg-cover {
+        width: 1610px;
+        height: 1523px;
+    background: url('../assets/images/hero-burst.svg') no-repeat;
+        background-position: top -410px center;
+        -webkit-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%);
+    }
+}
+</style>
