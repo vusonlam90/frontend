@@ -6,8 +6,8 @@ import './assets/css/styles.css'
 import BootstrapVue from 'bootstrap-vue'
 
 /* Import Bootstrap and BootstrapVue css files */
-// import 'bootstrap/dist/css/bootstrap.css'
-// import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 Vue.use(BootstrapVue)
 
