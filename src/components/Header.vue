@@ -30,6 +30,11 @@
                         <b-nav-item>Đăng nhập</b-nav-item>
                     </b-nav>
                 </b-col>
+                <span class="toggle-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </span>
             </b-row>
         </b-container>
     </header>

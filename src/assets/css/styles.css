@@ -23,6 +23,38 @@ body {
     max-width: 1170px;
 }
 
+.nav-menu {
+    position: relative;
+}
+
+.toggle-menu {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 42px;
+    height: 35px;
+    box-sizing: border-box;
+    padding-top: 4px;
+    display: none;
+}
+
+.toggle-menu .icon-bar {
+    -webkit-transform-origin: 21px;
+    -ms-transform-origin: 21px;
+    transform-origin: 21px;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    height: 3px;
+    width: 22px;
+    display: block;
+    border-radius: 1px;
+    background-color: #FFF;
+    margin: 4px auto;
+}
+
 /* Header */
 
 .main-header {
@@ -185,28 +217,6 @@ body {
     left: 50%;
 }
 
-@media (max-width: 991px) {
-     .hero-home-bg-cover {
-        width: 878px;
-        height: 676px;
-        background: url(../../assets/images/hero-burst-mobile.svg) no-repeat;
-        -webkit-transform: translate(-50%, 10%);
-        -ms-transform: translate(-50%, 10%);
-        transform: translate(-50%, 10%);
-    }
-}
-@media (min-width: 992px) {
-     .hero-home-bg-cover {
-        width: 1610px;
-        height: 1523px;
-        background: url(../../assets/images/hero-burst.svg) no-repeat;
-        background-position: top -410px center;
-        -webkit-transform: translate(-50%, 0%);
-        -ms-transform: translate(-50%, 0%);
-        transform: translate(-50%, 0%);
-    }
-}
-
 /* Footer */
 
 footer {
@@ -324,4 +334,115 @@ footer small {
     display: inline-block;
     padding: 12px 0;
     font-size: 13px;
+    float: right;
+}
+
+@media screen and (max-width: 1200px) {
+    .wrap .container {
+        max-width: 970px;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-home-bg-cover {
+        width: 1610px;
+        height: 1523px;
+        background: url(../../assets/images/hero-burst.svg) no-repeat;
+        background-position: top -410px center;
+        -webkit-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .wrap .container {
+        max-width: 750px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    .toggle-menu {
+        display: block;
+    }
+
+    /* Header lower than 991px  */
+    .main-header {
+        background-color: #000;
+    }
+    .navbar-logo {
+        width: 89px;
+        height: 27px;
+        background-size: 100%;
+        margin-top: 13px;
+        margin-bottom: 13px;
+    }
+    .nav-menu .col-8 {
+        display: none;
+    }
+
+    /* Content lower than 991px */
+    .main-content h1 {
+        font-size: 64px;
+    }
+    .hero-home-bg-cover {
+        width: 878px;
+        height: 676px;
+        background: url(../../assets/images/hero-burst-mobile.svg) no-repeat;
+        -webkit-transform: translate(-50%, 10%);
+        -ms-transform: translate(-50%, 10%);
+        transform: translate(-50%, 10%);
+    }
+
+    /* Footer lower than 991px */
+    footer {
+        padding: 50px 0 20px;
+    }
+    footer h3 {
+        margin: 50px 0 22px;
+    }
+    footer .col-social {
+        text-align: left;
+        margin-top: 120px;
+    }
+    footer .col-social a {
+        padding: 10px;
+    }
+    footer .col-social .nav-item {
+        padding-left: 0;
+        padding-right: 15px;
+    }
+    footer .policy {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Content lower than 991px */
+    .main-content h1 {
+        font-size: 48px;
+    }
+
+    /* Footer lower than 991px */
+    footer .policy .bottom-ins {
+        text-align: left;
+    }
+    footer .policy .nav-item a {
+        font-size: 10px;
+    }
+    footer .policy .nav-item a:first-child {
+        padding-left: 0;
+    }
+    footer .lang-footer {
+        font-size: 10px;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    footer small {
+        font-size: 10px;
+        float: none;
+    }
 }
