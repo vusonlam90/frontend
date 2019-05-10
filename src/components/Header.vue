@@ -3,10 +3,10 @@
         <div class="top-bar">
             <b-container>
                 <b-row>
-                    <b-col class="language" cols="6" align="left">
+                    <b-col class="language" cols="9" align="left">
                         This website is in Vietnamese. <b-link href="#">Switch to English.</b-link>
                     </b-col>
-                    <b-col class="close-btn" cols="6" align="right">
+                    <b-col class="close-btn" cols="3" align="right">
                         <b-link href="#">×</b-link>
                     </b-col>
                 </b-row>
